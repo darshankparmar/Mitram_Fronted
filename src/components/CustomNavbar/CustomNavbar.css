@@ -1,0 +1,38 @@
+Nav {
+    display: block;
+    padding: 1rem;
+}
+
+.navbar-nav {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none !important;
+    margin-left: 10px;
+    color: #222 !important;
+    height: 30px;
+}
+
+.navbar-brand {
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.logo-img {
+    height: 30px;
+    margin-right: 8px;
+}
