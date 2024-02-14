@@ -61,7 +61,7 @@ function Registration(props) {
 	const [count, setCount] = useState(1);
 	const passPrice = 270;
 
-	var msDiff = new Date("October 1, 2022").getTime() - new Date().getTime(); //Future date - current date
+	var msDiff = new Date("March 1, 2024").getTime() - new Date().getTime(); //Future date - current date
 	var daysTill = Math.floor(msDiff / (1000 * 60 * 60 * 24));
 
 	const [modalShow, setModalShow] = useState(false);
@@ -88,6 +88,8 @@ function Registration(props) {
 				!participants[i].mobileNo ||
 				!participants[i].gender
 			) {
+				console.log("here");
+				console.log(participants[i]);
 				alert("Please Enter Required Details");
 				setValidated(true);
 				return false;
@@ -135,10 +137,10 @@ function Registration(props) {
 
 	const handleInputs = (e, index) => {
 		const x = e.target.name;
-
 		let newPart = [...participants];
 		newPart[index][x] = e.target.value;
 		setParticipants(newPart);
+		console.log(participants);
 	};
 
 	const removePerson = (index) => {
@@ -169,13 +171,19 @@ function Registration(props) {
 		// 	event.stopPropagation();
 		// }
 
-		participants.map((participant, index) => {
-			participants[index].collegeId = participants[index].collegeId
+		try
+		{
+			participants.map((participant, index) => {
+			
+				participants[index].collegeId = participants[index].collegeId
 				.trim()
 				.toUpperCase();
-			participants[index].name = participants[index].name.trim();
-		});
-		console.log(participants);
+				participants[index].name = participants[index].name.trim();
+			});
+		}
+		catch {}
+		
+		// console.log(participants);
 
 		validate().then((val) => {
 			if (!val) return false;
@@ -227,7 +235,7 @@ function Registration(props) {
 		// console.log(document.getElementById("termCheckBox").checked);
 	};
 
-	console.log("વારંવાર યાદ કરાવા છત્તા તમારી આળસ અને તમારી બેદરકારી ને લીધે આજે તમે એક ખૂબ જ સરસ એવી નવરાત્રી ચુકી ગયા છો. Pass લેવા માટે કેટલા call કર્યા પણ 'કૂતરાની પુંછડી વાંકી એ વાંકી'");
+	// console.log("વારંવાર યાદ કરાવા છત્તા તમારી આળસ અને તમારી બેદરકારી ને લીધે આજે તમે એક ખૂબ જ સરસ એવી નવરાત્રી ચુકી ગયા છો. Pass લેવા માટે કેટલા call કર્યા પણ 'કૂતરાની પુંછડી વાંકી એ વાંકી'");
 
 	return (
 		<>

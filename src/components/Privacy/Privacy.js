@@ -6,7 +6,7 @@ export default function Privacy() {
 			<h1>Privacy Policy for Mitram</h1>
 
 			<p>
-				At Mitram, accessible from www.mitramgroup.com, one of our main
+				At Mitram, accessible from www.mitramgroup.in, one of our main
 				priorities is the privacy of our visitors. This Privacy Policy document
 				contains types of information that is collected and recorded by Mitram
 				and how we use it.

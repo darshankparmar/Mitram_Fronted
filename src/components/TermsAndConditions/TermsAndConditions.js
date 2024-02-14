@@ -11,7 +11,7 @@ export default function TermsAndConditions() {
 
 			<p>
 				These terms and conditions outline the rules and regulations for the use
-				of Mitram's Website, located at www.mitramgroup.com.
+				of Mitram's Website, located at www.mitramgroup.in
 			</p>
 
 			<p>
