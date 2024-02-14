@@ -18,7 +18,7 @@ export default function Details(props) {
 	const { data } = state ? state : {};
 	const navigate = useNavigate();
 
-	var msDiff = new Date("March 1, 2024").getTime() - new Date().getTime(); //Future date - current date
+	var msDiff = new Date("October 3, 2024").getTime() - new Date().getTime(); //Future date - current date
 	var daysTill = Math.floor(msDiff / (1000 * 60 * 60 * 24));
 	console.log(data);
 	
