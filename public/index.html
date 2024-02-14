@@ -8,19 +8,25 @@
 		<meta name="theme-color" content="#000000" />
 		<meta
 			name="description"
-			content="Web site created using create-react-app"
+			content="For The Students, By The Students."
 		/>
-		
+
+
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"
+		/>
+
 		<link rel="shortcut icon" href="./logo.png" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
 		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<script
 			src="https://unpkg.com/react/umd/react.production.min.js"
 			crossorigin
 		></script>
-
 		<script
 			src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
 			crossorigin
@@ -38,12 +44,21 @@
 		<script>
 			var Alert = ReactBootstrap.Alert;
 		</script>
-	
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3HZ4WHHFB4"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-3HZ4WHHFB4');
+		</script>
+
 		<title>Mitram</title>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
-		
 	</body>
 </html>

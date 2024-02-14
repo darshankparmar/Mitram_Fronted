@@ -57,49 +57,13 @@ footer .content .top {
     transition: all 0.4s ease;
 }
 
-.top .media-icons a:nth-child(1) {
-    background: #4267B2;
-}
-
-.top .media-icons a:nth-child(1):hover {
-    color: #4267B2;
+.top .media-icons a {
     background: #fff;
 }
 
-.top .media-icons a:nth-child(2) {
-    background: #1DA1F2;
-}
+.contact-mobile-no a, .contact-email a {
+    color: darkgrey !important;
 
-.top .media-icons a:nth-child(2):hover {
-    color: #1DA1F2;
-    background: #fff;
-}
-
-.top .media-icons a:nth-child(3) {
-    background: #E1306C;
-}
-
-.top .media-icons a:nth-child(3):hover {
-    color: #E1306C;
-    background: #fff;
-}
-
-.top .media-icons a:nth-child(4) {
-    background: #0077B5;
-}
-
-.top .media-icons a:nth-child(4):hover {
-    color: #0077B5;
-    background: #fff;
-}
-
-.top .media-icons a:nth-child(5) {
-    background: #FF0000;
-}
-
-.top .media-icons a:nth-child(5):hover {
-    color: #FF0000;
-    background: #fff;
 }
 
 

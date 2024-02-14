@@ -6,15 +6,133 @@
     box-shadow: 0px 0px 22px -4px rgb(87, 87, 87);
 }
 
-.banner {
-    /* margin: 10px 10px 0px 10px !important;    */
+.carousel-indicators button {
+    background-color: red !important;
 }
 
-/* .banner-register-button {
-    position: relative;
-    bottom:90px; 
-} */
+.thumbs.animated {
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+    
+.banner {
+    background-image: url(./Images/BACKGROUND.png);
+     /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .card-link {
     margin: 0;
 }
+
+.event-date, .event-time, .event-venue {
+    font-weight: bold;
+}
+
+#span2 {
+    font-weight: bold;
+    font-size: large;
+}
+
+@media (max-width: 1000px) {
+    #span1 {
+        font-size: small;
+        position: relative;
+        top: 20px;
+        font-family: fangsong;
+    }   
+
+    .sponsor {
+        width: 40%;
+    }
+
+    .event {
+        margin-top: 10px;
+    }
+
+    .youtube-video {
+        width: 350px;
+        height: 200px;
+    }
+
+         #sponsorLogo {
+             width: 80% !important;
+             margin-top: 30px !important;
+         }
+}
+
+.man-woman {
+    justify-content: space-around;
+}
+
+
+
+@media (min-width: 1000px) {
+
+    .carousel-width {
+        width: 700px;
+    }
+
+    #sponsorLogo {
+        width: 15% !important;
+        margin-top: 30px !important;
+    }
+
+    #sponsorLogoForDetails {
+        width: 45% !important;
+    }
+
+    #span1 {
+        font-size: larger;
+        position: relative;
+        top: 30px;
+        font-family: fangsong;
+    }   
+
+    #span2 {
+        font-size: larger;
+    }
+
+    #span4 {
+        width: 400px;
+    }
+
+    #manImg {
+        position: absolute;
+        width: 18% !important;
+        left: 10px;
+    }
+
+    #womanImg {
+        position: absolute;
+        width: 20% !important;
+        right: 10px;
+    }
+
+    .event {
+        margin-top: 30px;
+    }
+    
+    #fusionLogo {
+        width: 25% !important;
+    }
+
+    #desktop-hr {
+        display: none;
+    }
+
+    .event-detail {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .youtube-video {
+        width: 500px;
+        height: 300px;
+    }
+
+}
+ 

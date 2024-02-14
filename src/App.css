@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.componentHeight {
+  min-height: 470px;
+}
+
+body {
+  min-width: 320px;
+}

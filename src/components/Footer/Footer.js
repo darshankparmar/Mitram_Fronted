@@ -8,16 +8,31 @@ export default function Footer() {
 		<footer>
 			<div className="content">
 				<div className="top">
-					<div className="logo-details">
-						<span className="logo_name"> Mitram</span>
+					<div className="details">
+						<div className="logo-details">
+							<span className="logo_name"> Mitram</span>
+						</div>
+						<div
+							className="contact-info d-flex row"
+							style={{ color: "darkgray" }}
+						>
+							<div className="contact-mobile-no">
+								<i className="fa-solid fa-phone"></i>
+								<a href="tel:8469108864">+91 8469108864</a>
+							</div>
+							<div className="contact-mobile-no">
+								<i className="fa-solid fa-phone"></i>
+								<a href="tel:8849410031">+91 8849410031</a>
+							</div>
+							<div className="contact-email">
+								<i className="fa-solid fa-envelope"></i>
+								<a href="mailto:mitramgroupnadiad@gmail.com">
+									mitramgroupnadiad@gmail.com
+								</a>
+							</div>
+						</div>
 					</div>
 					<div className="media-icons">
-						<a href="https://facebook.com">
-							<i className="fab fa-facebook-f"></i>
-						</a>
-						<a href="https://twitter.com">
-							<i className="fab fa-twitter"></i>
-						</a>
 						<a
 							href="https://www.instagram.com/mitramgroup/"
 							rel="noreferrer"

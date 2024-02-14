@@ -1,0 +1,10 @@
+.location-list a {
+    margin: 0;
+    padding: 0;
+    height: auto !important;
+}
+
+.pickup-checkbox input {
+    position: inherit !important;
+    margin: 0 !important;
+}

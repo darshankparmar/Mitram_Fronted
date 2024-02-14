@@ -1,7 +1,11 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
 
 export default function Antrix2k19() {
-  return (
-    <div>Antrix2k19</div>
-  )
+	return (
+		<div className="Antrixx2k19 text-center componentHeight">
+			<h1 className="my-5">Antrix2k19</h1>
+		</div>
+	);
 }

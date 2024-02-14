@@ -1,0 +1,6 @@
+@media (min-width: 1000px) {
+    .analytics-details {
+        display: flex !important;
+        justify-content: space-around;
+    }
+}
