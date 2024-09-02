@@ -58,7 +58,7 @@ export default function Home() {
 				<div className="event-detail">
 					<div>
 						<div className="event-date">
-							Date : 3<sup>rd</sup> October, 2024
+							Date : 29<sup>th</sup> September, 2024
 						</div>
 						<div className="event-time">Time : 5:30 pm</div>
 					</div>
