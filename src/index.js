@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import { authHeader } from "helpers";
 
-axios.defaults.baseURL = "https://2fhx74r673.execute-api.ap-south-1.amazonaws.com/Dev";
+axios.defaults.baseURL = "https://13.203.32.216:8080/";
 // axios.defaults.baseURL = "http://localhost:8080";
 // axios.defaults.baseURL = "https://mitram-backend.onrender.com";
 axios.defaults.headers = authHeader();
