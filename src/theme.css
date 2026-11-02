@@ -1,0 +1,250 @@
+/* Mitram site theme — peach mandala backdrop, warm brown palette */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+:root {
+    --m-peach: #fad4ac;
+    --m-peach-soft: #fdebd8;
+    --m-cream: #fff8f0;
+    --m-accent: #8b4a24;
+    --m-accent-light: #b87a45;
+    --m-accent-dark: #5a2e14;
+    --m-ink: #3a1f14;
+    --m-muted: #7a5a48;
+    --m-line: rgba(122, 72, 40, 0.18);
+    --m-font-display: "Playfair Display", Georgia, serif;
+}
+
+body {
+    color: var(--m-ink);
+    background: var(--m-peach) url(./pages/Home/Images/BACKGROUND.png) center / cover fixed no-repeat;
+}
+
+::selection {
+    background: var(--m-accent);
+    color: #fff;
+}
+
+a {
+    color: var(--m-accent-dark);
+}
+
+h1, h2, h3, .title, .modal-title {
+    font-family: var(--m-font-display);
+    color: var(--m-ink);
+}
+
+/* ---------- Page shell ---------- */
+/* Inner pages sit on a cream card over the mandala backdrop */
+.m-panel,
+.contact-us,
+.register-page,
+.about-us > .container,
+.terms-and-condition,
+.privacy,
+.qr-scanner,
+.analytics-details,
+.search-box {
+    background: rgba(255, 248, 240, 0.94);
+    border: 1px solid var(--m-line);
+    border-radius: 20px;
+    box-shadow: 0 24px 50px -30px rgba(58, 31, 20, 0.45);
+}
+
+.contact-us {
+    margin-top: 48px !important;
+    padding: 8px 28px 28px;
+    width: min(420px, calc(100% - 32px)) !important;
+}
+
+.register-page {
+    margin-top: 40px;
+    margin-bottom: 48px;
+}
+
+.about-us {
+    padding: 48px 16px;
+}
+
+.about-us > .container {
+    max-width: 880px;
+    padding: 32px 16px;
+}
+
+.terms-and-condition,
+.privacy {
+    max-width: 960px;
+    margin: 40px auto !important;
+    padding: 32px;
+}
+
+.qr-scanner {
+    padding: 32px 16px;
+}
+
+/* ---------- Bootstrap overrides ---------- */
+.btn-primary,
+.btn-primary:disabled {
+    background-color: var(--m-accent) !important;
+    border-color: var(--m-accent) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--m-accent-dark) !important;
+    border-color: var(--m-accent-dark) !important;
+    box-shadow: 0 0 0 0.2rem rgba(139, 74, 36, 0.25) !important;
+}
+
+.btn-primary a,
+.btn a {
+    color: #fff !important;
+    margin: 0;
+    height: auto;
+}
+
+.form-control,
+.form-select {
+    border-color: var(--m-line);
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--m-accent);
+    box-shadow: 0 0 0 0.2rem rgba(139, 74, 36, 0.15);
+}
+
+.form-check-input:checked {
+    background-color: var(--m-accent);
+    border-color: var(--m-accent);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--m-ink);
+}
+
+.accordion-item {
+    border-color: var(--m-line);
+    background: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--m-accent-dark);
+    background-color: var(--m-peach-soft);
+}
+
+.accordion-button:focus {
+    border-color: var(--m-accent);
+    box-shadow: 0 0 0 0.2rem rgba(139, 74, 36, 0.15);
+}
+
+.card {
+    border: 1px solid var(--m-line);
+    border-radius: 16px;
+    background: var(--m-cream);
+    box-shadow: 0 18px 40px -28px rgba(58, 31, 20, 0.5);
+}
+
+.table {
+    background: #fff;
+    color: var(--m-ink);
+}
+
+.table thead th {
+    background: var(--m-ink);
+    color: var(--m-cream);
+    border-color: var(--m-ink);
+}
+
+.modal-content {
+    border: 0;
+    border-radius: 20px;
+    background: var(--m-cream);
+}
+
+.modal-header {
+    border-bottom-color: var(--m-line);
+}
+
+.modal-footer {
+    border-top-color: var(--m-line);
+}
+
+.text-muted {
+    color: var(--m-muted) !important;
+}
+
+/* ---------- Event pass (Details page) ---------- */
+.banner {
+    background: var(--m-peach) url(./pages/Home/Images/BACKGROUND.png) center / cover no-repeat;
+}
+
+.man-woman {
+    justify-content: space-around;
+}
+
+.event-date,
+.event-time,
+.event-venue {
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    #span1 {
+        font-size: small;
+        position: relative;
+        top: 20px;
+        font-family: fangsong;
+    }
+
+    .sponsor {
+        width: 40%;
+    }
+
+    #sponsorLogo {
+        width: 80% !important;
+        margin-top: 30px !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    #sponsorLogo {
+        width: 15% !important;
+        margin-top: 30px !important;
+    }
+
+    #sponsorLogoForDetails {
+        width: 45% !important;
+    }
+
+    #span1 {
+        font-size: larger;
+        position: relative;
+        top: 30px;
+        font-family: fangsong;
+    }
+
+    #manImg {
+        position: absolute;
+        width: 18% !important;
+        left: 10px;
+    }
+
+    #womanImg {
+        position: absolute;
+        width: 20% !important;
+        right: 10px;
+    }
+
+    #fusionLogo {
+        width: 25% !important;
+    }
+
+    .event-detail {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

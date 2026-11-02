@@ -10,90 +10,122 @@
 body {
     min-height: 100vh;
     width: 100%;
-    background: #EEECEB;
 }
 
-footer {
-    /* position: fixed; */
-    background: #140B5C;
-    width: 100%;
-    left: 0;    
+.m-footer {
+    background: var(--m-ink);
+    color: rgba(255, 248, 240, 0.75);
+    border-top: 4px solid var(--m-accent-light);
 }
 
-
-
-footer .content {
-    max-width: 1250px;
-    margin: auto;
-    padding: 30px 40px 27px 40px;
+.m-footer-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 56px 16px 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.4fr;
+    gap: 40px;
 }
 
-footer .content .top {
+/* The wordmark is red; sit it on a cream chip so it reads on the dark brown footer */
+.m-footer-brand img {
+    height: 64px;
+    padding: 6px 14px;
+    background: var(--m-cream);
+    border-radius: 14px;
+}
+
+.m-footer-brand p {
+    margin: 18px 0 20px;
+    max-width: 320px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.m-footer h4 {
+    font-family: var(--m-font-display);
+    color: var(--m-peach);
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.m-footer-col {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* margin-bottom: 50px; */
+    flex-direction: column;
+    gap: 10px;
 }
 
-.content .top .logo-details {
-    color: #fff;
-    font-size: 30px;
+.m-footer a {
+    color: rgba(255, 248, 240, 0.75) !important;
+    font-size: 14px;
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+    overflow-wrap: anywhere;
 }
 
-.content .top .media-icons {
+.m-footer a:hover {
+    color: var(--m-peach) !important;
+}
+
+.m-footer-col i {
+    width: 18px;
+    color: var(--m-accent-light);
+}
+
+.media-icons {
     display: flex;
+    gap: 10px;
 }
 
-.content .top .media-icons a {
-    height: 40px;
+.m-footer .media-icons a {
     width: 40px;
-    margin: 0 8px;
+    height: 40px;
+    display: grid;
+    place-items: center;
     border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    color: #fff;
-    font-size: 17px;
-    text-decoration: none;
-    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 248, 240, 0.25);
+    font-size: 16px;
 }
 
-.top .media-icons a {
-    background: #fff;
+.m-footer .media-icons a:hover {
+    background: var(--m-accent-light);
+    border-color: var(--m-accent-light);
+    color: #fff !important;
 }
 
-.contact-mobile-no a, .contact-email a {
-    color: darkgrey !important;
-
+.m-footer-bottom {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 18px 16px;
+    border-top: 1px solid rgba(255, 248, 240, 0.12);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 13px;
 }
 
+.m-footer-bottom a {
+    margin-left: 18px;
+    font-size: 13px;
+}
 
-@media (max-width: 700px) {
-    footer {
-        position: relative;
+@media (max-width: 800px) {
+    .m-footer-inner {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .content .top .logo-details {
-        font-size: 26px;
-    }
-
-    .content .top .media-icons a {
-        height: 35px;
-        width: 35px;
-        font-size: 14px;
-        line-height: 35px;
+    .m-footer-brand {
+        grid-column: 1 / -1;
     }
 }
 
 @media (max-width: 520px) {
-    footer::before {
-        top: 145px;
+    .m-footer-inner {
+        grid-template-columns: 1fr;
     }
 
-    footer .content .top {
-        flex-direction: column;
-    }
-
-    .content .top .media-icons {
-        margin-top: 16px;
+    .m-footer-bottom a:first-child {
+        margin-left: 0;
     }
 }

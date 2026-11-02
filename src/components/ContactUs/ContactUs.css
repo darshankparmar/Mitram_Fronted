@@ -2,7 +2,8 @@
     width: 350px;
 }
 
-.title {
-    font-weight: bold;
-    font-size: 40px;
+.contact-us .title {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--m-ink);
 }

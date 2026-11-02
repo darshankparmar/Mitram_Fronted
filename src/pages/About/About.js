@@ -3,29 +3,17 @@
 import React from "react";
 import "./About.css";
 // import QRCode from "react-qr-code";
-import logoImg from "./logo.png";
+import logoImg from "pages/Home/Images/Mitram_LOGO.png";
 
 export default function About() {
 	return (
 		<div className="about-us componentHeight">
 			<div className="container">
 				<div className="wrapper-about-us">
-					<img src={logoImg} alt="img" width="50%" />
-					<h1
-						className="animate-charcter"
-						style={{ color: "#820d80", fontStyle: "oblique", fontWeight: 600 }}
-					>
-						FOR THE STUDENTS,{" "}
-					</h1>
-					<h1
-						className="animate-charcter"
-						style={{
-							color: "rgb(255, 0, 0)",
-							fontStyle: "oblique",
-							fontWeight: 600,
-						}}
-					>
-						BY THE STUDENTS
+					<img src={logoImg} alt="Mitram Group" className="about-logo" />
+					<span className="about-kicker">Our story</span>
+					<h1 className="about-title">
+						For the students, <em>by the students.</em>
 					</h1>
 					{/* <p className="mission-txt">FOR THE STUDENTS, BY THE STUDENTS</p> */}
 				</div>
@@ -34,27 +22,31 @@ export default function About() {
 					{/* <h2>About</h2> */}
 					<div>
 						<p>
-							Mitram group started as an idea in a small office of nadiad in
-							September 2019. The vision was clear from the beginning: to
-							organise a better, inclusive and affordable event for the people
-							of nadiad.{" "}
+							Mitram Group began as an idea in a small office in Nadiad in
+							September 2019. The vision was clear from day one: to create
+							better, inclusive and affordable events for the people of Nadiad.
 						</p>
 						<p>
-							Within mere 20 days of planning and execution, Mitram group had
-							it's first ever event: Fusion 2019 - Dj and Garba night. It was a
-							fabulous success with the footfall of 500+.{" "}
+							After just 20 days of planning and execution, we hosted our very
+							first event, Fusion 2019, a Garba &amp; DJ night. It was a huge
+							success, with a footfall of more than 500 people.
 						</p>
 						<p>
-							After the tremendous success of fusion 2019, mitram organized two
-							more events. A new year party: Antrixx 2019 fetched more than 500+
-							people and the garba and DJ night Fusion 2021 drew more than 500+
-							people to the ground.{" "}
+							That same year we rang in the new year with Antrixx 2019, which
+							brought together another 500+ guests. In 2021 Fusion returned to
+							the ground and again drew a crowd of more than 500.
 						</p>
 						<p>
-							Mitram group thanks all the people who are part of this journey
-							which started as a brainchild of few people turning into network
-							of friends and the all start team who actively helped to every
-							event a huge success.
+							Since then Fusion has become a tradition. Fusion 2023, Fusion 5.0
+							in 2024 and Fusion 6.0 in 2025 have each carried forward the same
+							promise: music, garba and memories that people talk about all
+							year.
+						</p>
+						<p>
+							What started as the brainchild of a few friends has grown into a
+							big family. Mitram Group thanks everyone who has been part of this
+							journey, and especially our all-star team, whose hard work has made
+							every event a success.
 						</p>
 					</div>
 				</div>

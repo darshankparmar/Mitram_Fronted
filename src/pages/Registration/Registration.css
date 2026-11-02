@@ -48,13 +48,13 @@
     width: 100%;
     height: 40px;
     border: none;
-    background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+    background: linear-gradient(-135deg, var(--m-accent-light), var(--m-accent-dark));
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
     font-family: 'Open Sans';
     font-weight: 600;
-    color: #202020;
+    color: #fff;
 }
 
 @media (max-width: 1000px) {

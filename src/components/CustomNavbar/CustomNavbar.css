@@ -1,23 +1,79 @@
-Nav {
-    display: block;
-    padding: 1rem;
+.m-navbar {
+    padding: 10px 24px;
+    background: rgba(255, 248, 240, 0.88);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--m-line);
 }
 
-.navbar-nav {
-    padding: 10px;
+.m-navbar .navbar-nav {
+    padding: 10px 0;
+    gap: 4px;
 }
 
-a {
+.m-navbar a {
     text-decoration: none !important;
-    margin-left: 10px;
-    color: #222 !important;
-    height: 30px;
+    color: var(--m-ink) !important;
+}
+
+.m-navbar .navbar-nav a {
+    position: relative;
+    padding: 6px 12px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 999px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.m-navbar .navbar-nav a:hover {
+    color: var(--m-accent) !important;
+    background: var(--m-peach-soft);
 }
 
 .navbar-brand {
-    margin-left: 8px;
-    font-weight: bold;
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.m-navbar .navbar-toggler {
+    border-color: var(--m-line);
+}
+
+.m-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(139, 74, 36, 0.15);
+}
+
+.m-navbar a.m-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    margin: 0;
+}
+
+.logo-img {
+    height: 34px;
+    width: auto;
+    display: block;
+}
+
+.m-brand span {
+    font-family: var(--m-font-display);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--m-ink);
+}
+
+@media (max-width: 991px) {
+    .m-navbar {
+        padding: 8px 16px;
+    }
+
+    .m-navbar .navbar-nav a {
+        display: block;
+    }
+
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -30,9 +86,4 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
-}
-
-.logo-img {
-    height: 30px;
-    margin-right: 8px;
 }
