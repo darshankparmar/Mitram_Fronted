@@ -27,11 +27,11 @@ function CustomNavbar(props) {
 
 	return (
 		<>
-			<Navbar bg="light" expand="lg" expanded={expanded}>
+			<Navbar expand="lg" expanded={expanded} sticky="top" className="m-navbar">
 				<Navbar.Brand>
-					<Link to="/" onClick={() => setExpanded(false)}>
-						<img className="logo-img" alt="logo" src={MitramLogo} />
-						Mitram
+					<Link to="/" className="m-brand" onClick={() => setExpanded(false)}>
+						<img className="logo-img" alt="" src={MitramLogo} />
+						<span>Mitram</span>
 					</Link>
 				</Navbar.Brand>
 
@@ -40,7 +40,7 @@ function CustomNavbar(props) {
 					onClick={() => setExpanded(expanded ? false : "expanded")}
 				/>
 				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="me-auto">
+					<Nav className="ms-auto">
 						{props.user && (
 							<Link to="/" onClick={() => setExpanded(false)}>
 								Hello {props.user.name}
@@ -56,12 +56,6 @@ function CustomNavbar(props) {
 								Analytics
 							</Link>
 						)}
-						<Link to="/register" onClick={() => setExpanded(false)}>
-							Register
-						</Link>
-						<Link to="/qrcheck" onClick={() => setExpanded(false)}>
-							Verify Your Pass
-						</Link>
 						<Link to="/about" onClick={() => setExpanded(false)}>
 							About
 						</Link>
