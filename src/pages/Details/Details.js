@@ -1,12 +1,9 @@
 /** @format */
 
 import React from "react";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import Form from "react-bootstrap/Form";
 import "pages/Home/Home.css";
-import sponsorLogo from "pages/Home/Images/LOTUS.png";
 import FusionLogo from "pages/Home/Images/Fusion_LOGO.png";
 import man from "pages/Home/Images/man.png";
 import woman from "pages/Home/Images/woman.png";

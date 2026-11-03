@@ -13,20 +13,8 @@ import { useReactToPrint } from "react-to-print";
 import { Link } from "react-router-dom";
 import QRCode from "react-qr-code";
 
-function formatDate(date, format) {
-	const map = {
-		mm:
-			date.getMonth() >= 9 ? date.getMonth() + 1 : "0" + (date.getMonth() + 1),
-		dd: date.getDate() >= 10 ? date.getDate() : "0" + date.getDate().toString(),
-		yy: date.getFullYear().toString().slice(-2),
-		yyyy: date.getFullYear(),
-	};
-	// console.log(format.replace(/dd|mm|yyyy/gi, (matched) => map[matched]));
-	return format.replace(/dd|mm|yyyy/gi, (matched) => map[matched]);
-}
-
 function CheckOut() {
-	const [serachParams, set_search_params] = useSearchParams();
+	const [serachParams] = useSearchParams();
 	const [isLoading, setIsLoading] = useState(true);
 	const [data, setData] = useState({});
 	useEffect(() => {
@@ -50,6 +38,7 @@ function CheckOut() {
 			}
 		};
 		loadData();
+	// eslint-disable-next-line react-hooks/exhaustive-deps -- run once on mount
 	}, []);
 
 	const componentRef = useRef();
@@ -206,6 +195,7 @@ function CheckOut() {
 							<a
 								href="https://www.instagram.com/mitramgroup/"
 								target="_blank"
+								rel="noreferrer"
 								className="insta-link"
 							>
 								@mitramgroup

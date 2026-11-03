@@ -30,6 +30,7 @@ export default function QRScannerForConf() {
 				});
 		};
 		getIt();
+	// eslint-disable-next-line react-hooks/exhaustive-deps -- only re-run when a new QR code is scanned
 	}, [isScanned,QRCode]);
 	const onNewScanResult = async (decodedText, decodedR) => {
 
