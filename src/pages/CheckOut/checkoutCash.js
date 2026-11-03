@@ -1,6 +1,6 @@
 /** @format */
 
-import { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -87,6 +87,7 @@ export default function CheckoutCash() {
 					<a
 						href="https://www.instagram.com/mitramgroup/"
 						target="_blank"
+						rel="noreferrer"
 						className="insta-link"
 					>
 						@mitramgroup

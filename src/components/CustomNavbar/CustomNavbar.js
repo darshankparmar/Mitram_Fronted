@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
@@ -11,8 +11,6 @@ import { authenticationService } from "services";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 
 function CustomNavbar(props) {
-	const currentUser = authenticationService.currentUserValue;
-
 	const [expanded, setExpanded] = useState(false);
 
 	// console.log(currentUser)

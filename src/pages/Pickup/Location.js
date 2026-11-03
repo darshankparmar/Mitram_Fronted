@@ -39,7 +39,7 @@ export default function Location() {
 				}
 
 				setremainingPickUp(
-					users.filter((user) => user.isPickedUp == false).length,
+					users.filter((user) => user.isPickedUp === false).length,
 				);
 
 				users.sort(compare);
@@ -54,7 +54,7 @@ export default function Location() {
 		};
 
 		loadData();
-	}, [searchVal]);
+	}, [searchVal, locationId]);
 
 	const pickedup = async (id, value, index) => {
 		participantsService.updatePickUp(id, value).then((res) => {
@@ -69,7 +69,7 @@ export default function Location() {
 		data[index].isPickedUp = value;
 		setData(data);
 		setcount(count + 1);
-		setremainingPickUp(data.filter((user) => user.isPickedUp == false).length);
+		setremainingPickUp(data.filter((user) => user.isPickedUp === false).length);
 	};
 	return (
 		<div

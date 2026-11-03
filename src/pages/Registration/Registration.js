@@ -9,9 +9,6 @@ import "./Registration.css";
 import { participantsService } from "services";
 import { useNavigate } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
-import FusionLogo from "pages/Home/Images/Fusion_LOGO.png";
-import man from "pages/Home/Images/man.png";
-import woman from "pages/Home/Images/woman.png";
 
 function MyVerticallyCenteredModal(props) {
 	return (
@@ -60,9 +57,6 @@ function Registration(props) {
 	const [participants, setParticipants] = useState([{}]);
 	const [count, setCount] = useState(1);
 	const passPrice = 270;
-
-	var msDiff = new Date("October 3, 2024").getTime() - new Date().getTime(); //Future date - current date
-	var daysTill = Math.floor(msDiff / (1000 * 60 * 60 * 24));
 
 	const [modalShow, setModalShow] = useState(false);
 
@@ -160,7 +154,7 @@ function Registration(props) {
 
 	const validateEmail = (email) => {
 		return email.match(
-			/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+			/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
 		);
 	};
 
@@ -173,7 +167,7 @@ function Registration(props) {
 
 		try
 		{
-			participants.map((participant, index) => {
+			participants.forEach((participant, index) => {
 			
 				participants[index].collegeId = participants[index].collegeId
 				.trim()

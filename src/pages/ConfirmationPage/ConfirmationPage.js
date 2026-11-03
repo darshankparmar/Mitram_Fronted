@@ -68,7 +68,7 @@ export default function ConfirmationPage() {
 			}
 			container.innerHTML = ans;
 
-			for (var index = 0; index < l; index++) {
+			for (let index = 0; index < l; index++) {
 				if (val[index].isVerified) continue;
 				document.getElementById(`qr-button-${index}`).onclick = function (e) {
 					const ind = e.target.id.substring(10);

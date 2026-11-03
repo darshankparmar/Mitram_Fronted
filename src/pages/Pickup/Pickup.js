@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { authenticationService, participantsService } from "services";
+import { participantsService } from "services";
 import Badge from "react-bootstrap/Badge";
 import ListGroup from "react-bootstrap/ListGroup";
 import "./Pickup.css";
@@ -23,6 +23,7 @@ export default function Pickup() {
 			});
 		};
 		loadData();
+	// eslint-disable-next-line react-hooks/exhaustive-deps -- run once on mount
 	}, []);
 
 	return (
