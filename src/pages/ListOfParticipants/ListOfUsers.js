@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import Table from "react-bootstrap/Table";
 import { authenticationService } from "services";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Badge from "react-bootstrap/Badge";
 import ListGroup from "react-bootstrap/ListGroup";
 import "./ListOfUsers.css";
@@ -12,7 +12,6 @@ import "./ListOfUsers.css";
 export default function ListOfUsers() {
 	const navigate = useNavigate();
 	const [users, setUsers] = useState([]);
-	const [total, setTotal] = useState(0);
 	const [onlineVerified, setOnlineVerified] = useState(0);
 	const [onlineNotVerified, setOnlineNotVerified] = useState(0);
 	const [cashVerified, setCashVerified] = useState(0);
@@ -25,7 +24,6 @@ export default function ListOfUsers() {
 		const loadData = async () => {
 			authenticationService.getUsers().then((data) => {
 				setUsers(data.users);
-				setTotal(data.totalPasses);
 				setCashNotVerified(data.notVerifiedCash);
 				setCashVerified(data.verifiedCash);
 				setOnlineVerified(data.verifiedOnline);

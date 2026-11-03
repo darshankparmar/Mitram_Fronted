@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import { authenticationService } from "services";
 import Accordion from "react-bootstrap/Accordion";
-import { async } from "rxjs";
 
 export default function SoldPassList(props) {
 	const [online, setOnline] = useState([]);

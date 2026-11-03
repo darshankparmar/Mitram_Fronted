@@ -14,6 +14,7 @@ export default function Login() {
 				navigate('/');
 		}
 		redirect()
+	// eslint-disable-next-line react-hooks/exhaustive-deps -- run once on mount
 	}, []);
 
 	const navigate = useNavigate();

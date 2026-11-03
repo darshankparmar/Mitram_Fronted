@@ -12,7 +12,6 @@ import Fusion2k19 from "./events/Fusion2k19/Fusion2k19";
 import Fusion2k21 from "./events/Fusion2k21/Fusion2k21";
 import Antrix2k19 from "./events/Antrixx2k19/Antrix2k19";
 import Login from "./pages/Auth/Login/Login";
-import SignUp from "./pages/Auth/SignUp/SignUp";
 import About from "./pages/About/About";
 import Privacy from "./components/Privacy/Privacy";
 import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions";

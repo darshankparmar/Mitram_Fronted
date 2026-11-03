@@ -1,9 +1,7 @@
 /** @format */
 
 import React from "react";
-import { Link } from "react-router-dom";
 import Html5QrcodePlugin from "pages/ConfirmationPage/QRScannerForConf/Html5QrcodePlugin";
-import scanapp from "pages/ConfirmationPage/QRScannerForConf/scanapp.svg";
 import { useNavigate } from "react-router-dom";
 import { participantsService } from "services";
 

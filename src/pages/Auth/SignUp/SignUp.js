@@ -35,7 +35,7 @@ export default function SignUp() {
 		}
 		if (
 			email === "" ||
-			!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
+			!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(
 				email,
 			)
 		) {
